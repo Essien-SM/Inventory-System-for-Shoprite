@@ -13,3 +13,18 @@ C:\Users\AZIZ\source\repos\Inventory System\Inventory System\obj\Debug\Inventory
 C:\Users\AZIZ\source\repos\Inventory System\Inventory System\obj\Debug\Inventory_System.LoginForm.resources
 C:\Users\AZIZ\source\repos\Inventory System\Inventory System\obj\Debug\Inventory_System.UserForm.resources
 C:\Users\AZIZ\source\repos\Inventory System\Inventory System\obj\Debug\Inventory_System.UserModuleForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\bin\Debug\Inventory System.exe.config
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\bin\Debug\Inventory System.exe
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\bin\Debug\Inventory System.pdb
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.csproj.AssemblyReference.cache
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.csproj.SuggestedBindingRedirects.cache
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\InventoryManagementSystem.CustomerButton.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.LoginForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.MainForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.Properties.Resources.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.UserForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.UserModuleForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.csproj.GenerateResource.cache
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.csproj.CoreCompileInputs.cache
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.exe
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.pdb
