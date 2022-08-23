@@ -135,10 +135,24 @@
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Column5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAGpJREFUOE9j
+        GNYgAIgFIEzKQQIQ/wfi80BMFUMvADHIQIoNBbnMAIhBBiAb2gDEJAOYN98DMczQB0C8AIhJBjDDYBhm
+        qAIQkwzQDYPhCUBMMsBlGFW8OWoYcYCqhoEAVQ0DAaoaNiIAAwMAp8ZEiki/RYAAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Column6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAFlJREFUOE/t
+        jsENwCAMxDJCN6KjdZMyCpvR8y9CgfwplixQlDuwwyWL85V9kJnfITPllmNBJpkpvFZlFIxkd/lDeGQU
+        jmQ3xRc2BsLfOU/hmp8XZm5SuDVmH+eohBTKXjdZAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="customerButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAZVJREFUSEvt
