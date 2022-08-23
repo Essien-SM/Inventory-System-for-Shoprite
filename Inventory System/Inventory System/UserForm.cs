@@ -15,14 +15,27 @@ namespace Inventory_System
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Iam Odoefe\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
+        SqlDataReader dr;
         public UserForm()
         {
             InitializeComponent();
+            LoadUser();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public void LoadUser()
         {
-
+            int i = 0;
+            dgvUser.Rows.Clear();
+            cm = new SqlCommand("SELECT * FROM dbUser", con);
+            con.Open();
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgvUser.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
+            }
+            dr.Close();
+            con.Close();
         }
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)

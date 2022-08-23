@@ -13,7 +13,7 @@ namespace Inventory_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserModuleForm());
+            Application.Run(new UserForm());
         }
     }
 }
