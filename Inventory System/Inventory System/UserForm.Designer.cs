@@ -31,9 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.customerButton5 = new InventoryManagementSystem.CustomerButton();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +38,12 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new InventoryManagementSystem.CustomerButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvUser
@@ -73,43 +73,9 @@
             this.dgvUser.EnableHeadersVisualStyles = false;
             this.dgvUser.Location = new System.Drawing.Point(0, 0);
             this.dgvUser.Name = "dgvUser";
-            this.dgvUser.Size = new System.Drawing.Size(766, 393);
+            this.dgvUser.Size = new System.Drawing.Size(745, 393);
             this.dgvUser.TabIndex = 2;
             this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.customerButton5);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 352);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(766, 41);
-            this.panel1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manage User";
-            // 
-            // customerButton5
-            // 
-            this.customerButton5.Image = ((System.Drawing.Image)(resources.GetObject("customerButton5.Image")));
-            this.customerButton5.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageHover")));
-            this.customerButton5.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageNormal")));
-            this.customerButton5.Location = new System.Drawing.Point(717, 9);
-            this.customerButton5.Name = "customerButton5";
-            this.customerButton5.Size = new System.Drawing.Size(31, 24);
-            this.customerButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton5.TabIndex = 17;
-            this.customerButton5.TabStop = false;
             // 
             // Column7
             // 
@@ -160,11 +126,46 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 5;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 352);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(745, 41);
+            this.panel1.TabIndex = 3;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageHover")));
+            this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
+            this.btnAdd.Location = new System.Drawing.Point(707, 9);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(31, 24);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 17;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.customerButton5_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manage User";
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 393);
+            this.ClientSize = new System.Drawing.Size(745, 393);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvUser);
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,7 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,7 +185,7 @@
         private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private InventoryManagementSystem.CustomerButton customerButton5;
+        private InventoryManagementSystem.CustomerButton btnAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

@@ -42,5 +42,13 @@ namespace Inventory_System
         {
 
         }
+
+        private void customerButton5_Click(object sender, EventArgs e)
+        {
+            UserModuleForm userModule = new UserModuleForm();
+            userModule.btnSave.Enabled = true;
+            userModule.btnUpdate.Enabled = false;
+            userModule.ShowDialog();
+        }
     }
 }

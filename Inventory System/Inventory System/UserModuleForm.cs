@@ -71,5 +71,15 @@ namespace Inventory_System
             txtPass.Clear();
             txtPhone.Clear();
         }
+
+        private void UserModuleForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

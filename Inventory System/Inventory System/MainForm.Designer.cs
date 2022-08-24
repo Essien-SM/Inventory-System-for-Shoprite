@@ -35,21 +35,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.customerButton5 = new InventoryManagementSystem.CustomerButton();
-            this.customerButton4 = new InventoryManagementSystem.CustomerButton();
-            this.customerButton3 = new InventoryManagementSystem.CustomerButton();
-            this.customerButton2 = new InventoryManagementSystem.CustomerButton();
-            this.customerButton1 = new InventoryManagementSystem.CustomerButton();
+            this.btnOrder = new InventoryManagementSystem.CustomerButton();
+            this.btnUser = new InventoryManagementSystem.CustomerButton();
+            this.btnCategory = new InventoryManagementSystem.CustomerButton();
+            this.btnCustomer = new InventoryManagementSystem.CustomerButton();
+            this.btnProduct = new InventoryManagementSystem.CustomerButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,11 +60,11 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.customerButton5);
-            this.panel1.Controls.Add(this.customerButton4);
-            this.panel1.Controls.Add(this.customerButton3);
-            this.panel1.Controls.Add(this.customerButton2);
-            this.panel1.Controls.Add(this.customerButton1);
+            this.panel1.Controls.Add(this.btnOrder);
+            this.panel1.Controls.Add(this.btnUser);
+            this.panel1.Controls.Add(this.btnCategory);
+            this.panel1.Controls.Add(this.btnCustomer);
+            this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -129,66 +129,67 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "PRODUCT";
             // 
-            // customerButton5
+            // btnOrder
             // 
-            this.customerButton5.Image = ((System.Drawing.Image)(resources.GetObject("customerButton5.Image")));
-            this.customerButton5.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageHover")));
-            this.customerButton5.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageNormal")));
-            this.customerButton5.Location = new System.Drawing.Point(824, 20);
-            this.customerButton5.Name = "customerButton5";
-            this.customerButton5.Size = new System.Drawing.Size(48, 43);
-            this.customerButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton5.TabIndex = 16;
-            this.customerButton5.TabStop = false;
+            this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
+            this.btnOrder.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnOrder.ImageHover")));
+            this.btnOrder.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnOrder.ImageNormal")));
+            this.btnOrder.Location = new System.Drawing.Point(824, 20);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(48, 43);
+            this.btnOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnOrder.TabIndex = 16;
+            this.btnOrder.TabStop = false;
             // 
-            // customerButton4
+            // btnUser
             // 
-            this.customerButton4.Image = ((System.Drawing.Image)(resources.GetObject("customerButton4.Image")));
-            this.customerButton4.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton4.ImageHover")));
-            this.customerButton4.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton4.ImageNormal")));
-            this.customerButton4.Location = new System.Drawing.Point(720, 20);
-            this.customerButton4.Name = "customerButton4";
-            this.customerButton4.Size = new System.Drawing.Size(48, 43);
-            this.customerButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton4.TabIndex = 15;
-            this.customerButton4.TabStop = false;
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnUser.ImageHover")));
+            this.btnUser.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnUser.ImageNormal")));
+            this.btnUser.Location = new System.Drawing.Point(720, 20);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(48, 43);
+            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUser.TabIndex = 15;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
             // 
-            // customerButton3
+            // btnCategory
             // 
-            this.customerButton3.Image = ((System.Drawing.Image)(resources.GetObject("customerButton3.Image")));
-            this.customerButton3.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton3.ImageHover")));
-            this.customerButton3.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton3.ImageNormal")));
-            this.customerButton3.Location = new System.Drawing.Point(616, 20);
-            this.customerButton3.Name = "customerButton3";
-            this.customerButton3.Size = new System.Drawing.Size(48, 43);
-            this.customerButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton3.TabIndex = 14;
-            this.customerButton3.TabStop = false;
-            this.customerButton3.Click += new System.EventHandler(this.customerButton3_Click);
+            this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
+            this.btnCategory.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageHover")));
+            this.btnCategory.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageNormal")));
+            this.btnCategory.Location = new System.Drawing.Point(616, 20);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(48, 43);
+            this.btnCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCategory.TabIndex = 14;
+            this.btnCategory.TabStop = false;
+            this.btnCategory.Click += new System.EventHandler(this.customerButton3_Click);
             // 
-            // customerButton2
+            // btnCustomer
             // 
-            this.customerButton2.Image = ((System.Drawing.Image)(resources.GetObject("customerButton2.Image")));
-            this.customerButton2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton2.ImageHover")));
-            this.customerButton2.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton2.ImageNormal")));
-            this.customerButton2.Location = new System.Drawing.Point(512, 20);
-            this.customerButton2.Name = "customerButton2";
-            this.customerButton2.Size = new System.Drawing.Size(48, 43);
-            this.customerButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton2.TabIndex = 13;
-            this.customerButton2.TabStop = false;
+            this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
+            this.btnCustomer.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageHover")));
+            this.btnCustomer.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageNormal")));
+            this.btnCustomer.Location = new System.Drawing.Point(512, 20);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(48, 43);
+            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCustomer.TabIndex = 13;
+            this.btnCustomer.TabStop = false;
             // 
-            // customerButton1
+            // btnProduct
             // 
-            this.customerButton1.Image = ((System.Drawing.Image)(resources.GetObject("customerButton1.Image")));
-            this.customerButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton1.ImageHover")));
-            this.customerButton1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customerButton1.ImageNormal")));
-            this.customerButton1.Location = new System.Drawing.Point(408, 20);
-            this.customerButton1.Name = "customerButton1";
-            this.customerButton1.Size = new System.Drawing.Size(48, 43);
-            this.customerButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton1.TabIndex = 12;
-            this.customerButton1.TabStop = false;
+            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
+            this.btnProduct.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnProduct.ImageHover")));
+            this.btnProduct.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnProduct.ImageNormal")));
+            this.btnProduct.Location = new System.Drawing.Point(408, 20);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(48, 43);
+            this.btnProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnProduct.TabIndex = 12;
+            this.btnProduct.TabStop = false;
             // 
             // label1
             // 
@@ -242,14 +243,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,11 +263,11 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private InventoryManagementSystem.CustomerButton customerButton1;
-        private InventoryManagementSystem.CustomerButton customerButton5;
-        private InventoryManagementSystem.CustomerButton customerButton4;
-        private InventoryManagementSystem.CustomerButton customerButton3;
-        private InventoryManagementSystem.CustomerButton customerButton2;
+        private InventoryManagementSystem.CustomerButton btnProduct;
+        private InventoryManagementSystem.CustomerButton btnOrder;
+        private InventoryManagementSystem.CustomerButton btnUser;
+        private InventoryManagementSystem.CustomerButton btnCategory;
+        private InventoryManagementSystem.CustomerButton btnCustomer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
