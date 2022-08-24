@@ -74,7 +74,7 @@ namespace Inventory_System
             txtUName.Clear();
             txtFName.Clear();
             txtPass.Clear();
-            txtPass.Clear();
+           txtRepass.Clear();
             txtPhone.Clear();
         }
 

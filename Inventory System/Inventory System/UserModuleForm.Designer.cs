@@ -235,6 +235,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserModuleForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserModuleForm";
             this.Load += new System.EventHandler(this.UserModuleForm_Load);
             this.panel1.ResumeLayout(false);

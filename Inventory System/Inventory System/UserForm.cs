@@ -76,5 +76,10 @@ namespace Inventory_System
             userModule.ShowDialog();
             LoadUser();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
