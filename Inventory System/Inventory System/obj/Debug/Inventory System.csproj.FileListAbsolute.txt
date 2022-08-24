@@ -29,3 +29,4 @@ C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\
 C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.exe
 C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.pdb
 C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.CustomerForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.CustomerModuleForm.resources
