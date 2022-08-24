@@ -43,6 +43,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtRepass = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +86,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 109);
+            this.label2.Location = new System.Drawing.Point(71, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 1;
@@ -92,7 +94,7 @@
             // 
             // txtUName
             // 
-            this.txtUName.Location = new System.Drawing.Point(160, 108);
+            this.txtUName.Location = new System.Drawing.Point(160, 94);
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(356, 20);
             this.txtUName.TabIndex = 2;
@@ -100,7 +102,7 @@
             // 
             // txtFName
             // 
-            this.txtFName.Location = new System.Drawing.Point(160, 149);
+            this.txtFName.Location = new System.Drawing.Point(160, 134);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(356, 20);
             this.txtFName.TabIndex = 4;
@@ -109,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 150);
+            this.label3.Location = new System.Drawing.Point(78, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 3;
@@ -117,7 +119,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(160, 193);
+            this.txtPass.Location = new System.Drawing.Point(160, 175);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(356, 20);
             this.txtPass.TabIndex = 6;
@@ -126,7 +128,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(71, 194);
+            this.label4.Location = new System.Drawing.Point(79, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 5;
@@ -134,7 +136,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(160, 237);
+            this.txtPhone.Location = new System.Drawing.Point(160, 248);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(356, 20);
             this.txtPhone.TabIndex = 8;
@@ -143,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(71, 238);
+            this.label5.Location = new System.Drawing.Point(101, 250);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 16);
             this.label5.TabIndex = 7;
@@ -156,7 +158,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(213, 279);
+            this.btnSave.Location = new System.Drawing.Point(213, 290);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 31);
             this.btnSave.TabIndex = 9;
@@ -171,7 +173,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(303, 279);
+            this.btnUpdate.Location = new System.Drawing.Point(303, 290);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 31);
             this.btnUpdate.TabIndex = 10;
@@ -186,7 +188,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(394, 279);
+            this.button2.Location = new System.Drawing.Point(394, 290);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 31);
             this.button2.TabIndex = 11;
@@ -194,11 +196,31 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // txtRepass
+            // 
+            this.txtRepass.Location = new System.Drawing.Point(160, 210);
+            this.txtRepass.Name = "txtRepass";
+            this.txtRepass.Size = new System.Drawing.Size(356, 20);
+            this.txtRepass.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 212);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 16);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Retype-Password:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // UserModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 347);
+            this.Controls.Add(this.txtRepass);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
@@ -232,9 +254,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox txtRepass;
         public System.Windows.Forms.TextBox txtUName;
         public System.Windows.Forms.TextBox txtFName;
         public System.Windows.Forms.TextBox txtPass;
