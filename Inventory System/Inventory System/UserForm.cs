@@ -82,5 +82,15 @@ namespace Inventory_System
             userModule.ShowDialog();
             LoadUser();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
