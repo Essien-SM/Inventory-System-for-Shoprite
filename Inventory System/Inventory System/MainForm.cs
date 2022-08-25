@@ -43,7 +43,7 @@ namespace Inventory_System
 
         private void customerButton3_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new CategoryForm());
         }
 
         private void label6_Click(object sender, EventArgs e)

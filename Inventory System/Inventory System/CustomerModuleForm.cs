@@ -27,7 +27,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to save this customer?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO dbCustomer(cname,cphone)VALUES(@cname,@cphone)", con);
+                    cm = new SqlCommand("INSERT INTO dbCustomers(cname,cphone)VALUES(@cname,@cphone)", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
                     con.Open();
@@ -78,7 +78,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to update this Customer?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE dbCustomer SET cname=@cname,cphone=@cphone WHERE cid LIKE'" + lblCId.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE dbCustomers SET cname=@cname,cphone=@cphone WHERE cid LIKE'" + lblCId.Text + "' ", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
                     con.Open();
