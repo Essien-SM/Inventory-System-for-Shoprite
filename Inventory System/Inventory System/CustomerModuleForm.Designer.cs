@@ -39,7 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.IbIcld = new System.Windows.Forms.Label();
+            this.lblCId = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -105,6 +105,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -155,22 +156,23 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Name:";
             // 
-            // IbIcld
+            // lblCId
             // 
-            this.IbIcld.AutoSize = true;
-            this.IbIcld.Location = new System.Drawing.Point(77, 211);
-            this.IbIcld.Name = "IbIcld";
-            this.IbIcld.Size = new System.Drawing.Size(63, 13);
-            this.IbIcld.TabIndex = 26;
-            this.IbIcld.Text = "Customer Id";
-            this.IbIcld.Visible = false;
+            this.lblCId.AutoSize = true;
+            this.lblCId.Location = new System.Drawing.Point(77, 211);
+            this.lblCId.Name = "lblCId";
+            this.lblCId.Size = new System.Drawing.Size(63, 13);
+            this.lblCId.TabIndex = 26;
+            this.lblCId.Text = "Customer Id";
+            this.lblCId.Visible = false;
+            this.lblCId.Click += new System.EventHandler(this.lblcId_Click);
             // 
             // CustomerModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 241);
-            this.Controls.Add(this.IbIcld);
+            this.Controls.Add(this.lblCId);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnUpdate);
@@ -203,6 +205,6 @@
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox txtCName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label IbIcld;
+        public System.Windows.Forms.Label lblCId;
     }
 }
