@@ -25,14 +25,14 @@ namespace Inventory_System
         public void LoadCategory()
         {
             int i = 0;
-            dgvCategory.Rows.Clear();
+            dgvProduct.Rows.Clear();
             cm = new SqlCommand("SELECT * FROM dbCategory", con);
             con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dgvCategory.Rows.Add(i, dr[0].ToString(), dr[1].ToString());
+                dgvProduct.Rows.Add(i, dr[0].ToString(), dr[1].ToString());
             }
             dr.Close();
             con.Close();
@@ -40,12 +40,12 @@ namespace Inventory_System
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string colName = dgvCategory.Columns[e.ColumnIndex].Name;
+            string colName = dgvProduct.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
                 CategoryModuleForm customerModule = new CategoryModuleForm();
-                customerModule.lblCatId.Text = dgvCategory.Rows[e.RowIndex].Cells[1].Value.ToString();
-                customerModule.txtCatName.Text = dgvCategory.Rows[e.RowIndex].Cells[2].Value.ToString();
+                customerModule.lblCatId.Text = dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+                customerModule.txtCatName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
                 
 
 
@@ -59,7 +59,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to delete this user?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     con.Open();
-                    cm = new SqlCommand("DELETE FROM dbCategory WHERE catid LIKE '" + dgvCategory.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
+                    cm = new SqlCommand("DELETE FROM dbCategory WHERE catid LIKE '" + dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record has been successfully deleted!");
