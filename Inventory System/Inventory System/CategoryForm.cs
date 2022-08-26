@@ -19,6 +19,7 @@ namespace Inventory_System
         public CategoryForm()
         {
             InitializeComponent();
+            LoadCategory();
         }
 
         public void LoadCategory()
