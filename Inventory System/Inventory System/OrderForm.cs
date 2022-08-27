@@ -16,5 +16,11 @@ namespace Inventory_System
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            OrderModuleForm moduleForm = new OrderModuleForm();
+            moduleForm.ShowDialog();
+        }
     }
 }

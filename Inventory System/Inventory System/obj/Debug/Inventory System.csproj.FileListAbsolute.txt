@@ -74,3 +74,5 @@ C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Invento
 C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.csproj.CoreCompileInputs.cache
 C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.exe
 C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory System.pdb
+C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.OrderForm.resources
+C:\Users\Iam Odoefe\Source\Repos\Essien-SM\Inventory-System-for-Shoprite\Inventory System\Inventory System\obj\Debug\Inventory_System.OrderModuleForm.resources
