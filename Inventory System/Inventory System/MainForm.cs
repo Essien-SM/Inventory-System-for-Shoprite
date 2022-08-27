@@ -60,5 +60,10 @@ namespace Inventory_System
         {
             openChildForm(new CustomerForm());
         }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ProductForm());
+        }
     }
 }

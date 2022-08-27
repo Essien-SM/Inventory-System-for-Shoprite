@@ -13,7 +13,7 @@ namespace Inventory_System
 {
     public partial class CustomerForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AZIZ\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Iam Odoefe\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         public CustomerForm()
@@ -27,7 +27,7 @@ namespace Inventory_System
         {
             int i = 0;
             dgvCustomer.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM tbCustomer", con);
+            cm = new SqlCommand("SELECT * FROM dbCustomer", con);
             con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())

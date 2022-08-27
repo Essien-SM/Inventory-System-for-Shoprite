@@ -13,7 +13,7 @@ namespace Inventory_System
 {
     public partial class CategoryModuleForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AZIZ\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Iam Odoefe\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         public CategoryModuleForm()
         {
@@ -32,7 +32,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to save this category?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO tbCategory(catname)VALUES(@catname)", con);
+                    cm = new SqlCommand("INSERT INTO dbCategory(catname)VALUES(@catname)", con);
                     cm.Parameters.AddWithValue("@catname", txtCatName.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
@@ -73,7 +73,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to update this Category?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE tbCategory SET catname=@catname WHERE catid LIKE'" + lblCatId.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE dbCategory SET catname=@catname WHERE catid LIKE'" + lblCatId.Text + "' ", con);
                     cm.Parameters.AddWithValue("@catname", txtCatName.Text);
                     con.Open();
                     cm.ExecuteNonQuery();

@@ -13,7 +13,7 @@ namespace Inventory_System
 {
     public partial class UserModuleForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AZIZ\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Iam Odoefe\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         public UserModuleForm()
         {
@@ -42,7 +42,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO tbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
+                    cm = new SqlCommand("INSERT INTO dbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
                     cm.Parameters.AddWithValue("@username", txtUName.Text);
                     cm.Parameters.AddWithValue("@fullname", txtFName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
@@ -95,7 +95,7 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to update this user?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE tbUser SET fullname=@fullname, password=@password, phone=@phone WHERE username LIKE'" + txtUName.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE dbUser SET fullname=@fullname, password=@password, phone=@phone WHERE username LIKE'" + txtUName.Text + "' ", con);
                     cm.Parameters.AddWithValue("@fullname", txtFName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
                     cm.Parameters.AddWithValue("@phone", txtPhone.Text);

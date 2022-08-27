@@ -32,19 +32,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRepass = new System.Windows.Forms.TextBox();
+            this.txtPDes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtPPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtFName = new System.Windows.Forms.TextBox();
+            this.txtPQty = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUName = new System.Windows.Forms.TextBox();
+            this.txtPName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboQty = new System.Windows.Forms.ComboBox();
+            this.comboCat = new System.Windows.Forms.ComboBox();
+            this.lblPid = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -77,17 +79,17 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 18);
+            this.label1.Size = new System.Drawing.Size(145, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User Module";
+            this.label1.Text = "Product Module";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtRepass
+            // txtPDes
             // 
-            this.txtRepass.Location = new System.Drawing.Point(160, 190);
-            this.txtRepass.Name = "txtRepass";
-            this.txtRepass.Size = new System.Drawing.Size(356, 22);
-            this.txtRepass.TabIndex = 27;
+            this.txtPDes.Location = new System.Drawing.Point(160, 190);
+            this.txtPDes.Name = "txtPDes";
+            this.txtPDes.Size = new System.Drawing.Size(356, 22);
+            this.txtPDes.TabIndex = 27;
             // 
             // label6
             // 
@@ -113,6 +115,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnUpdate
             // 
@@ -127,6 +130,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -141,6 +145,7 @@
             this.btnSave.TabIndex = 23;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label5
             // 
@@ -152,12 +157,12 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "Category:";
             // 
-            // txtPass
+            // txtPPrice
             // 
-            this.txtPass.Location = new System.Drawing.Point(160, 155);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(356, 22);
-            this.txtPass.TabIndex = 20;
+            this.txtPPrice.Location = new System.Drawing.Point(160, 155);
+            this.txtPPrice.Name = "txtPPrice";
+            this.txtPPrice.Size = new System.Drawing.Size(356, 22);
+            this.txtPPrice.TabIndex = 20;
             // 
             // label4
             // 
@@ -169,12 +174,12 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Price:";
             // 
-            // txtFName
+            // txtPQty
             // 
-            this.txtFName.Location = new System.Drawing.Point(160, 114);
-            this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(356, 22);
-            this.txtFName.TabIndex = 18;
+            this.txtPQty.Location = new System.Drawing.Point(160, 114);
+            this.txtPQty.Name = "txtPQty";
+            this.txtPQty.Size = new System.Drawing.Size(356, 22);
+            this.txtPQty.TabIndex = 18;
             // 
             // label3
             // 
@@ -186,12 +191,12 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Quantity:";
             // 
-            // txtUName
+            // txtPName
             // 
-            this.txtUName.Location = new System.Drawing.Point(160, 74);
-            this.txtUName.Name = "txtUName";
-            this.txtUName.Size = new System.Drawing.Size(356, 22);
-            this.txtUName.TabIndex = 16;
+            this.txtPName.Location = new System.Drawing.Point(160, 74);
+            this.txtPName.Name = "txtPName";
+            this.txtPName.Size = new System.Drawing.Size(356, 22);
+            this.txtPName.TabIndex = 16;
             // 
             // label2
             // 
@@ -204,32 +209,43 @@
             this.label2.Text = "Product Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboQty
+            // comboCat
             // 
-            this.comboQty.FormattingEnabled = true;
-            this.comboQty.Location = new System.Drawing.Point(160, 224);
-            this.comboQty.Name = "comboQty";
-            this.comboQty.Size = new System.Drawing.Size(356, 22);
-            this.comboQty.TabIndex = 28;
+            this.comboCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCat.FormattingEnabled = true;
+            this.comboCat.Location = new System.Drawing.Point(160, 224);
+            this.comboCat.Name = "comboCat";
+            this.comboCat.Size = new System.Drawing.Size(356, 22);
+            this.comboCat.TabIndex = 28;
+            // 
+            // lblPid
+            // 
+            this.lblPid.AutoSize = true;
+            this.lblPid.Location = new System.Drawing.Point(83, 269);
+            this.lblPid.Name = "lblPid";
+            this.lblPid.Size = new System.Drawing.Size(70, 14);
+            this.lblPid.TabIndex = 29;
+            this.lblPid.Text = "product id";
             // 
             // ProductModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 304);
-            this.Controls.Add(this.comboQty);
+            this.Controls.Add(this.lblPid);
+            this.Controls.Add(this.comboCat);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtRepass);
+            this.Controls.Add(this.txtPDes);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtPPrice);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtFName);
+            this.Controls.Add(this.txtPQty);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtUName);
+            this.Controls.Add(this.txtPName);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -237,6 +253,7 @@
             this.Name = "ProductModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductModuleForm";
+            this.Load += new System.EventHandler(this.ProductModuleForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -250,18 +267,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox txtRepass;
+        public System.Windows.Forms.TextBox txtPDes;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txtPass;
+        public System.Windows.Forms.TextBox txtPPrice;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtFName;
+        public System.Windows.Forms.TextBox txtPQty;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox txtUName;
+        public System.Windows.Forms.TextBox txtPName;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.ComboBox comboQty;
+        public System.Windows.Forms.ComboBox comboCat;
+        public System.Windows.Forms.Label lblPid;
     }
 }
