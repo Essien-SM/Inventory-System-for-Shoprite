@@ -16,6 +16,7 @@ namespace Inventory_System
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Iam Odoefe\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
+        int qty = 0;
         public OrderModuleForm()
         {
             InitializeComponent();
@@ -81,6 +82,132 @@ namespace Inventory_System
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        
+
+        
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            GetQty();
+            if (Convert.ToInt16(UDQty.Value) > qty)
+            {
+                MessageBox.Show("Instock quantity is not enough!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                UDQty.Value = UDQty.Value - 1;
+                return;
+            }
+            if (Convert.ToInt16(UDQty.Value) > 0)
+            {
+                int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQty.Value);
+                txtTotal.Text = total.ToString();
+            }
+        }
+
+        private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCId.Text = dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCName.Text = dgvCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
+        }
+
+        private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtPid.Text = dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtPName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtPrice.Text = dgvProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
+           
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtCId.Text == "")
+                {
+                    MessageBox.Show("Please select customer!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (txtPid.Text == "")
+                {
+                    MessageBox.Show("Please select product!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (MessageBox.Show("Are you sure you want to insert this order?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("INSERT INTO dbOrder(odate, pid, cid, qty, price, total)VALUES(@odate, @pid, @cid, @qty, @price, @total)", con);
+                    cm.Parameters.AddWithValue("@odate", dtOrder.Value);
+                    cm.Parameters.AddWithValue("@pid", Convert.ToInt32(txtPid.Text));
+                    cm.Parameters.AddWithValue("@cid", Convert.ToInt32(txtCId.Text));
+                    cm.Parameters.AddWithValue("@qty", Convert.ToInt32(UDQty.Value));
+                    cm.Parameters.AddWithValue("@price", Convert.ToInt32(txtPrice.Text));
+                    cm.Parameters.AddWithValue("@total", Convert.ToInt32(txtTotal.Text));
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Order has been successfully inserted.");
+
+
+                    cm = new SqlCommand("UPDATE dbProduct SET pqty=(pqty-@pqty) WHERE pid LIKE '" + txtPid.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(UDQty.Value));
+
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    Clear();
+                    LoadProduct();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Clear()
+        {
+            txtCId.Clear();
+            txtCName.Clear();
+
+            txtPid.Clear();
+            txtPName.Clear();
+
+            txtPrice.Clear();
+            UDQty.Value = 0;
+            txtTotal.Clear();
+            dtOrder.Value = DateTime.Now;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        public void GetQty()
+        {
+            cm = new SqlCommand("SELECT pqty FROM dbProduct WHERE pid='" + txtPid.Text + "'", con);
+            con.Open();
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                qty = Convert.ToInt32(dr[0].ToString());
+            }
+            dr.Close();
+            con.Close();
+        }
+
+        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
